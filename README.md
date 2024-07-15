@@ -2,4 +2,4 @@
 
 ## Curriculums
 
-- [Linked List]()
+- [Linked List](https://github.com/Mohosin999/DSA-in-JavaScript/blob/main/Linked%20List/main.js)
