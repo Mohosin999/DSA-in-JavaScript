@@ -18,6 +18,10 @@ can also say step by step solution of the problem is called algorithm.
 
 Big O notation helps us understand `how long` an algorithm will take to run _(time complexity)_ or `how much` memory it will need as the amount of data it handles grows _(space complexity)_.
 
-#### O(n)
+### `O(n)`
 
 Signifies that the execution time of algorithm grows `linearly` in proportion to the size of the `input data` (n).
+
+    Example:
+
+    Imagine you have a list of groceries. To fine a specific item (like milk), you might need to scan through the entire list. If the list has 5 items, it'll take a relatively short time. But if the list has 500 items, it'll take considerably longer. This is the essence of linear time complexity.
