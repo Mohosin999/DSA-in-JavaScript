@@ -29,6 +29,11 @@ _Imagine you have a list of groceries. To fine a specific item (like milk), you 
 ```javascript
 const groceries = ["sugar", "bread", "milk", "eggs", "flour"];
 
+/*
+ * =========================================
+ *         For small list of items
+ * =========================================
+ */
 // O(n)
 const searchForItem = (item) => {
   for (let i = 0; i < groceries.length; i++) {
@@ -38,5 +43,52 @@ const searchForItem = (item) => {
   }
 };
 
+/*
+ * =========================================
+ *         For large list of items
+ * =========================================
+ */
+
+// O(n)
+const searchForItem = (item) => {
+  // n
+  for (let i = 0; i < groceries.length; i++) {
+    if (groceries[i] === item) {
+      console.log(`Found ${item}`);
+    }
+  }
+
+  // n
+  for (let j = 0; j < groceries.length; j++) {
+    if (groceries[j] === item) {
+      console.log(`Found ${item}`);
+    }
+  }
+
+  // n+n = 2n --> O(2n)
+  // Drop the constant, so it becomes O(n) not O(2n)
+};
+
 searchForItem("milk"); // Found milk
 ```
+
+### `O(1)`
+
+**O(1)** also known as `constant` time, signifies that the execution time of an algorithm remains `constant` regardless of the input size.
+
+**Example:**
+
+_Imagine you have a box filled with items, and you know exactly where each item is located. To get a specific item, you go directly to its location, taking the same amount of time irrespective of how many items are in the box._
+
+```javascript
+const numbers = [1, 2, 3, 4, 5, 6];
+
+// O(1)
+const getElement = (arr, index) => arr[index];
+
+console.log(getElement(numbers, 3)); // 4
+```
+
+### `O(n^2)`
+
+Indicates that the algorithm's execution time grows quadratically with the size of the input data (represented by n).
