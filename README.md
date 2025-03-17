@@ -1,9 +1,8 @@
 # Data Structures & Algorithms in JavaScript
 
-## What is Data Structure:
+## What is Data Structure?
 
-A data structure is a specific way of organizing, storing and accessing
-data.
+A data structure is a specific way of organizing, storing, and accessing data efficiently.
 
 ## What is an Algorithm:
 
